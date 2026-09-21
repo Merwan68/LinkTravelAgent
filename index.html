@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="am" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link Travel Agent | Umrah Travel Agency in Ethiopia</title>
+  <meta name="description" content="Link Travel Agent — Umrah travel information and assistance in Addis Ababa, Ethiopia. Contact us for current journey and package information.">
+  <meta name="keywords" content="Link Travel Agent Ethiopia, Umrah Ethiopia, Umrah travel agency Ethiopia, Umrah Addis Ababa, Ethiopian Umrah travel, Makkah, Madinah">
+  <meta property="og:title" content="Link Travel Agent | Umrah Travel Agency in Ethiopia">
+  <meta property="og:description" content="Umrah travel information and assistance from Link Travel Agent in Addis Ababa, Ethiopia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/link-travel-agent-logo.png">
+  <meta name="theme-color" content="#4b1f7a">
+  <link rel="icon" href="assets/link-travel-agent-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --purple:#4B1F7A;
+      --purple-deep:#24103f;
+      --purple-2:#6c35a5;
+      --orange:#F59B0B;
+      --orange-deep:#dc7d00;
+      --cream:#fffaf1;
+      --paper:#ffffff;
+      --ink:#1f1a25;
+      --muted:#6d6673;
+      --line:#eee7f2;
+      --soft:#f7f2fa;
+      --shadow:0 20px 60px rgba(55,25,84,.12);
+      --radius:24px;
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:#fff;
+      font-family:Inter,"Noto Sans Ethiopic",system-ui,sans-serif;
+      overflow-x:hidden;
+    }
+    body.amharic{font-family:"Noto Sans Ethiopic",Inter,system-ui,sans-serif}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .container{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      color:var(--orange-deep);font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+    }
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--orange);border-radius:10px}
+    .section{padding:100px 0;position:relative}
+    .section.alt{background:var(--soft)}
+    .section.dark{background:var(--purple-deep);color:white}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:38px}
+    h1,h2,h3{margin:0;line-height:1.08}
+    h1,h2{font-family:"Playfair Display","Noto Sans Ethiopic",serif}
+    h2{font-size:clamp(2rem,4vw,3.4rem);max-width:760px}
+    .lead{font-size:1.05rem;line-height:1.85;color:var(--muted);max-width:760px}
+    .dark .lead{color:#ddd4e7}
+    .btns{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      min-height:50px;padding:0 20px;border-radius:999px;border:1px solid transparent;
+      font-weight:800;transition:.25s ease;white-space:nowrap;
+    }
+    .btn.primary{background:var(--orange);color:#251507;box-shadow:0 12px 25px rgba(245,155,11,.22)}
+    .btn.primary:hover{transform:translateY(-2px);background:#ffad22}
+    .btn.ghost{border-color:rgba(255,255,255,.35);color:white;background:rgba(255,255,255,.08)}
+    .btn.light{background:#fff;color:var(--purple);border-color:#eee}
+    .btn.outline{border-color:#dbcbe8;color:var(--purple);background:white}
+    .btn:hover{transform:translateY(-2px)}
+    .icon{
+      width:42px;height:42px;border-radius:14px;display:grid;place-items:center;
+      background:rgba(245,155,11,.12);color:var(--orange-deep);font-size:1.2rem;flex:0 0 auto
+    }
+
+    /* NAV */
+    .topbar{
+      position:fixed;inset:0 0 auto;z-index:1000;
+      padding:14px 0;transition:.3s ease;
+    }
+    .topbar.scrolled{background:rgba(25,12,39,.88);backdrop-filter:blur(18px);box-shadow:0 8px 35px rgba(0,0,0,.12)}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand img{width:54px;height:54px;object-fit:contain;border-radius:50%;background:#fff}
+    .brand strong{color:white;font-size:.95rem;letter-spacing:.02em}
+    .navlinks{display:flex;align-items:center;gap:4px}
+    .navlinks a{color:#fff;padding:10px 11px;border-radius:12px;font-size:.86rem;font-weight:700;opacity:.94}
+    .navlinks a:hover{background:rgba(255,255,255,.1);color:#fff}
+    .lang{display:flex;align-items:center;border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:3px;margin-left:6px}
+    .lang button{border:0;background:transparent;color:white;border-radius:999px;padding:7px 10px;font-weight:800;font-size:.78rem}
+    .lang button.active{background:white;color:var(--purple)}
+    .menu{display:none;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:white;width:46px;height:46px;border-radius:14px;font-size:1.35rem}
+    .mobile-panel{display:none}
+
+    /* HERO */
+    .hero{
+      min-height:760px;display:flex;align-items:center;position:relative;overflow:hidden;
+      background:#20102f;
+    }
+    .hero:before{
+      content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(90deg,rgba(26,10,43,.94) 0%,rgba(40,16,61,.72) 45%,rgba(20,8,34,.35) 100%),
+        url("assets/gallery/makkah-group-night.jpg") center/cover no-repeat;
+      transform:scale(1.04);animation:heroZoom 14s ease-in-out infinite alternate;
+    }
+    .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(245,155,11,.14),transparent 35%)}
+    @keyframes heroZoom{to{transform:scale(1.1)}}
+    .hero-content{position:relative;z-index:2;padding-top:90px;color:white;max-width:800px}
+    .hero-logo{width:105px;height:105px;object-fit:contain;border-radius:50%;background:#fff;padding:6px;box-shadow:0 16px 45px rgba(0,0,0,.28);margin-bottom:25px}
+    .hero h1{font-size:clamp(2.8rem,6.2vw,6rem);max-width:850px}
+    .hero .sub{font-size:clamp(1rem,1.7vw,1.25rem);line-height:1.8;color:#f1eaf6;max-width:680px;margin:24px 0 30px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .pill{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.09);backdrop-filter:blur(10px);padding:9px 13px;border-radius:999px;color:#fff;font-size:.8rem}
+    .scroll-cue{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);color:#fff;opacity:.75;font-size:.78rem;z-index:2}
+
+    /* TRUST STRIP */
+    .trust{margin-top:-45px;position:relative;z-index:4}
+    .trust-card{background:white;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:22px;padding:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .trust-item{display:flex;align-items:center;gap:13px;padding:12px 15px}
+    .trust-item strong{display:block;font-size:.95rem}
+    .trust-item span{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
+
+    /* HORIZONTAL COLLECTIONS */
+    .rail-wrap{position:relative}
+    .rail{
+      display:flex;gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;
+      padding:8px 2px 18px;scrollbar-width:none;
+    }
+    .rail::-webkit-scrollbar{display:none}
+    .rail > *{scroll-snap-align:start;flex:0 0 min(350px,78vw)}
+    .rail-controls{display:flex;gap:8px}
+    .rail-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:white;color:var(--purple);box-shadow:0 8px 25px rgba(40,20,60,.08)}
+    .rail-btn:hover{background:var(--purple);color:white}
+
+    /* CARDS */
+    .service-card,.package-card,.destination-card,.faq-item{
+      border:1px solid var(--line);background:white;border-radius:var(--radius);box-shadow:0 12px 35px rgba(48,25,69,.06)
+    }
+    .service-card{padding:26px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:.25s}
+    .service-card:hover,.package-card:hover,.destination-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service-card h3{font-size:1.25rem;margin:20px 0 10px}
+    .service-card p{color:var(--muted);line-height:1.7;font-size:.93rem}
+    .service-no{color:#cfc3d7;font-weight:900;font-size:.8rem;letter-spacing:.12em}
+    .package-card{overflow:hidden;display:flex;flex-direction:column}
+    .package-top{padding:26px;background:linear-gradient(145deg,#fff,#faf6fd)}
+    .package-label{font-size:.75rem;color:var(--orange-deep);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    .package-card h3{margin:9px 0 8px;font-size:1.55rem;color:var(--purple)}
+    .package-card p{color:var(--muted);line-height:1.65;font-size:.9rem}
+    .package-bottom{padding:22px 26px;border-top:1px solid var(--line)}
+    .package-note{font-size:.8rem;color:var(--muted);line-height:1.6}
+    .tag{display:inline-flex;padding:7px 10px;border-radius:999px;background:#f3eafb;color:var(--purple);font-size:.76rem;font-weight:800;margin:4px 5px 0 0}
+    .media-card{border-radius:22px;overflow:hidden;background:#17121c;border:1px solid rgba(255,255,255,.08)}
+    .media-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+    .media-card .caption{padding:14px 16px;color:white}
+    .media-card .caption small{color:#bfb4c9}
+    .video-card{background:#110d16;border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+    .video-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#09070c}
+    .video-info{padding:15px 16px 17px;color:white}
+    .video-info strong{display:block}
+    .video-info span{display:block;color:#bcb1c5;font-size:.78rem;line-height:1.5;margin-top:6px}
+    .video-actions{display:flex;gap:8px;margin-top:12px}
+    .mini-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid rgba(255,255,255,.18);color:white;background:rgba(255,255,255,.06);padding:9px 11px;border-radius:10px;font-size:.76rem;font-weight:800}
+    .mini-btn:hover{background:var(--orange);color:#2c1600;border-color:var(--orange)}
+    .destination-card{overflow:hidden;position:relative;min-height:430px}
+    .destination-card img{width:100%;height:430px;object-fit:cover}
+    .destination-card:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(20,10,30,.9))}
+    .destination-content{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:26px;color:white}
+    .destination-content h3{font-size:2rem}
+    .destination-content p{color:#eee0f2;line-height:1.6;font-size:.9rem}
+
+    /* ABOUT */
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+    .about-visual{position:relative}
+    .about-visual img{width:100%;border-radius:30px;aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
+    .about-badge{position:absolute;right:-20px;bottom:24px;background:white;padding:18px;border-radius:18px;box-shadow:var(--shadow);max-width:230px}
+    .about-badge strong{color:var(--purple);font-size:1.1rem}
+    .about-badge p{font-size:.78rem;line-height:1.6;color:var(--muted);margin:6px 0 0}
+
+    /* JOURNEY */
+    .journey{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;position:relative;margin-top:45px}
+    .journey:before{content:"";position:absolute;left:7%;right:7%;top:31px;height:2px;background:#dccde8}
+    .step{position:relative;z-index:1;text-align:center}
+    .step-no{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;margin:0 auto 14px;background:white;border:2px solid #eadff0;color:var(--purple);font-weight:900;box-shadow:0 10px 25px rgba(50,25,70,.08)}
+    .step:first-child .step-no,.step:last-child .step-no{border-color:var(--orange);background:#fff9ed}
+    .step strong{font-size:.86rem;display:block;line-height:1.35}
+    .step span{font-size:.73rem;color:var(--muted);display:block;margin-top:5px}
+
+    /* SOCIAL */
+    .social-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .social-card{border-radius:26px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid var(--line);background:white;box-shadow:0 12px 35px rgba(48,25,69,.06)}
+    .social-left{display:flex;align-items:center;gap:15px}
+    .social-icon{width:52px;height:52px;border-radius:17px;display:grid;place-items:center;color:white;font-weight:900;font-size:1.3rem}
+    .fb{background:#1877f2}.tk{background:#111}
+    .social-card strong{display:block}.social-card span{display:block;color:var(--muted);font-size:.82rem;margin-top:4px}
+
+    /* FAQ */
+    .faq-list{display:grid;gap:12px;max-width:900px;margin:auto}
+    .faq-item{overflow:hidden}
+    .faq-q{width:100%;border:0;background:white;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:15px;text-align:start;font-weight:800;color:var(--ink)}
+    .faq-q span:last-child{color:var(--purple);font-size:1.3rem}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;padding:0 22px;color:var(--muted);line-height:1.8}
+    .faq-item.open .faq-a{max-height:220px;padding:0 22px 20px}
+
+    /* CONTACT */
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:25px}
+    .contact-panel{border-radius:28px;padding:34px;background:var(--purple-deep);color:white;box-shadow:var(--shadow)}
+    .contact-panel h3{font-size:1.8rem}
+    .contact-panel p{color:#ddd4e7;line-height:1.7}
+    .contact-lines{display:grid;gap:13px;margin:25px 0}
+    .contact-line{display:flex;gap:12px;align-items:flex-start}
+    .contact-line .i{width:34px;height:34px;border-radius:11px;background:rgba(245,155,11,.12);color:var(--orange);display:grid;place-items:center;flex:0 0 auto}
+    .contact-line strong{display:block;font-size:.92rem}.contact-line span{display:block;color:#c9bfd0;font-size:.83rem;margin-top:3px;line-height:1.55}
+    .form-card{border:1px solid var(--line);border-radius:28px;padding:30px;background:white;box-shadow:var(--shadow)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-size:.78rem;font-weight:800;color:#4d4652;margin-bottom:7px}
+    input,select,textarea{width:100%;border:1px solid #ded5e4;background:#fff;border-radius:13px;padding:13px 14px;outline:none;color:var(--ink)}
+    input:focus,select:focus,textarea:focus{border-color:#b58bd0;box-shadow:0 0 0 4px rgba(108,53,165,.08)}
+    textarea{min-height:125px;resize:vertical}
+    .field.full{grid-column:1/-1}
+    .form-note{font-size:.75rem;color:var(--muted);line-height:1.6;margin-top:12px}
+    .form-status{display:none;margin-top:12px;padding:12px 14px;border-radius:12px;background:#effaf1;color:#2c6b35;font-size:.82rem}
+    .map-card{margin-top:18px;border:1px dashed #d8c8e4;border-radius:18px;padding:18px;background:#fbf8fd}
+
+    /* FOOTER */
+    footer{background:#160b25;color:white;padding:70px 0 25px}
+    .footer-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr 1fr;gap:35px}
+    footer .brand strong{font-size:1rem}
+    .footer-desc{color:#bfb2c9;line-height:1.75;font-size:.85rem;max-width:350px;margin:18px 0}
+    footer h4{margin:0 0 15px;font-size:.9rem}
+    footer ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+    footer li,footer a{color:#bfb2c9;font-size:.82rem}
+    footer a:hover{color:white}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.09);margin-top:45px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#91849c;font-size:.76rem}
+    .social-row{display:flex;gap:8px}
+    .social-row a{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.08);display:grid;place-items:center;color:white}
+
+    /* FLOATING CONTACT */
+    .floating{position:fixed;right:18px;bottom:18px;z-index:900;display:flex;flex-direction:column;gap:9px}
+    .float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;box-shadow:0 14px 30px rgba(0,0,0,.2);font-size:1.1rem}
+    .float-call{background:var(--purple)} .float-mail{background:var(--orange-deep)}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* RTL-safe Amharic */
+    [dir="rtl"] .section-head{flex-direction:row-reverse}
+    [dir="rtl"] .faq-q{text-align:right}
+    [dir="rtl"] .contact-line{text-align:right}
+    [dir="rtl"] .btns{justify-content:flex-start}
+
+    @media(max-width:1100px){
+      .navlinks{display:none}.menu{display:block}
+      .mobile-panel{position:absolute;top:78px;left:20px;right:20px;background:rgba(28,13,44,.97);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:10px;box-shadow:var(--shadow)}
+      .mobile-panel.open{display:grid}
+      .mobile-panel a{color:white;padding:13px 14px;border-radius:12px;font-weight:700}
+      .mobile-panel a:hover{background:rgba(255,255,255,.08)}
+      .about-grid,.contact-grid{grid-template-columns:1fr}
+      .about-visual{max-width:600px;margin:auto}
+      .journey{grid-template-columns:repeat(4,1fr);gap:28px}
+      .journey:before{display:none}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:760px){
+      .container{width:min(var(--max),calc(100% - 28px))}
+      .section{padding:75px 0}
+      .section-head{align-items:flex-start;flex-direction:column}
+      .trust-card{grid-template-columns:1fr}
+      .hero{min-height:720px}
+      .hero-content{padding-top:80px}
+      .hero-logo{width:86px;height:86px}
+      .hero h1{font-size:clamp(2.4rem,11vw,4rem)}
+      .hero .sub{font-size:.95rem}
+      .rail > *{flex-basis:82vw}
+      .journey{grid-template-columns:repeat(2,1fr)}
+      .social-grid{grid-template-columns:1fr}
+      .form-grid{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .footer-grid{grid-template-columns:1fr}
+      .floating{right:12px;bottom:12px}
+    }
+    @media(min-width:1200px){
+      .rail > *{flex-basis:330px}
+      .video-card{flex-basis:285px!important}
+      .media-card{flex-basis:260px!important}
+      .service-card{flex-basis:285px!important}
+      .package-card{flex-basis:365px!important}
+      .destination-card{flex-basis:410px!important}
+    }
+  </style>
+</head>
+<body class="amharic">
+<header class="topbar" id="topbar">
+  <div class="container">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Link Travel Agent home">
+        <img src="assets/link-travel-agent-logo.png" alt="Link Travel Agent official logo">
+        <strong>LINK TRAVEL AGENT</strong>
+      </a>
+      <div class="navlinks">
+        <a href="#home" data-i18n="nav.home">መነሻ</a>
+        <a href="#about" data-i18n="nav.about">ስለ እኛ</a>
+        <a href="#umrah" data-i18n="nav.umrah">ዑምራ</a>
+        <a href="#services" data-i18n="nav.services">አገልግሎቶች</a>
+        <a href="#packages" data-i18n="nav.packages">ጥቅሎች</a>
+        <a href="#gallery" data-i18n="nav.gallery">ማህደረ ምስል</a>
+        <a href="#videos" data-i18n="nav.videos">ቪዲዮዎች</a>
+        <a href="#faq" data-i18n="nav.faq">ጥያቄዎች</a>
+        <a href="#contact" data-i18n="nav.contact">ያግኙን</a>
+      </div>
+      <div class="lang" aria-label="Language selector">
+        <button class="active" data-lang="am">አማርኛ</button>
+        <button data-lang="en">English</button>
+      </div>
+      <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    </nav>
+    <div class="mobile-panel" id="mobilePanel">
+      <a href="#home" data-i18n="nav.home">መነሻ</a>
+      <a href="#about" data-i18n="nav.about">ስለ እኛ</a>
+      <a href="#umrah" data-i18n="nav.umrah">ዑምራ</a>
+      <a href="#services" data-i18n="nav.services">አገልግሎቶች</a>
+      <a href="#packages" data-i18n="nav.packages">ጥቅሎች</a>
+      <a href="#gallery" data-i18n="nav.gallery">ማህደረ ምስል</a>
+      <a href="#videos" data-i18n="nav.videos">ቪዲዮዎች</a>
+      <a href="#faq" data-i18n="nav.faq">ጥያቄዎች</a>
+      <a href="#contact" data-i18n="nav.contact">ያግኙን</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content reveal">
+      <img class="hero-logo" src="assets/link-travel-agent-logo.png" alt="Link Travel Agent official logo">
+      <span class="eyebrow" style="color:#ffc56b" data-i18n="hero.eyebrow">UMRAH TRAVEL • ETHIOPIA</span>
+      <h1 data-i18n="hero.title">የዑምራ ጉዞዎን በመተማመን ይጀምሩ</h1>
+      <p class="sub" data-i18n="hero.text">ለዑምራ ጉዞዎ መረጃና የጉዞ እገዛ ከLINK TRAVEL AGENT ጋር። የአሁኑን የጉዞ እና የጥቅል መረጃ በቀጥታ ያግኙ።</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact" data-i18n="hero.cta1">ያግኙን</a>
+        <a class="btn ghost" href="#packages" data-i18n="hero.cta2">የዑምራ መረጃ ይጠይቁ</a>
+      </div>
+      <div class="hero-meta">
+        <span class="pill">0942888886</span>
+        <span class="pill">0965888883</span>
+        <span class="pill" data-i18n="hero.location">Bole Tropical Mall • 4F • Office 404</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">↓ <span data-i18n="hero.scroll">Explore</span></div>
+</section>
+
+<div class="container trust">
+  <div class="trust-card reveal">
+    <div class="trust-item"><div class="icon">🕋</div><div><strong data-i18n="trust.1">የዑምራ ጉዞ</strong><span data-i18n="trust.1s">Umrah travel information</span></div></div>
+    <div class="trust-item"><div class="icon">📞</div><div><strong data-i18n="trust.2">ቀጥታ ግንኙነት</strong><span data-i18n="trust.2s">Call the office directly</span></div></div>
+    <div class="trust-item"><div class="icon">📍</div><div><strong data-i18n="trust.3">Addis Ababa</strong><span data-i18n="trust.3s">Bole Tropical Mall, 4th Floor</span></div></div>
+  </div>
+</div>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <img src="assets/gallery/makkah-group-night.jpg" alt="Pilgrims in Makkah during an Umrah journey" loading="lazy">
+        <div class="about-badge">
+          <strong>LINK TRAVEL AGENT</strong>
+          <p data-i18n="about.badge">ለዑምራ ጉዞ መረጃና ግንኙነት በቀጥታ ከኤጀንሲው ያግኙ።</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="about.eyebrow">ABOUT LINK</span>
+        <h2 data-i18n="about.title">ለመንፈሳዊ ጉዞዎ የተዘጋጀ የጉዞ አጋር</h2>
+        <p class="lead" data-i18n="about.text">LINK TRAVEL AGENT በአዲስ አበባ የሚገኝ እና ለዑምራ ጉዞ መረጃና ግንኙነት የሚያቀርብ የጉዞ ኤጀንሲ ነው። ስለ ዑምራ ጉዞዎች፣ ጥቅሎች እና የመጓጓዣ ዝርዝሮች የአሁኑን መረጃ ለማግኘት በስልክ ወይም በቢሮው ያግኙን።</p>
+        <div class="btns" style="margin-top:25px">
+          <a class="btn outline" href="tel:0942888886" data-i18n="about.call">0942888886 ይደውሉ</a>
+          <a class="btn primary" href="#contact" data-i18n="about.inquiry">ጥያቄ ይላኩ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" data-i18n="services.eyebrow">SERVICES</span><h2 data-i18n="services.title">የዑምራ ጉዞዎን በቀላሉ ለማቀናጀት</h2></div>
+      <div class="rail-controls"><button class="rail-btn" data-target="serviceRail" data-dir="-1">←</button><button class="rail-btn" data-target="serviceRail" data-dir="1">→</button></div>
+    </div>
+    <div class="rail-wrap">
+      <div class="rail" id="serviceRail">
+        <article class="service-card reveal"><div><div class="icon">🕋</div><span class="service-no">01</span><h3 data-i18n="svc.1">የዑምራ ጉዞ</h3><p data-i18n="svc.1p">ስለ ዑምራ ጉዞ እና የጉዞ አማራጮች መረጃ ያግኙ።</p></div></article>
+        <article class="service-card reveal"><div><div class="icon">📋</div><span class="service-no">02</span><h3 data-i18n="svc.2">ጥቅል መረጃ</h3><p data-i18n="svc.2p">የአሁኑን የዑምራ ጥቅል ዝርዝሮች በቀጥታ ከኤጀንሲው ይጠይቁ።</p></div></article>
+        <article class="service-card reveal"><div><div class="icon">📝</div><span class="service-no">03</span><h3 data-i18n="svc.3">የምዝገባ ጥያቄ</h3><p data-i18n="svc.3p">የምዝገባ ሂደትን እና የሚያስፈልጉ ወቅታዊ መረጃዎችን ይጠይቁ።</p></div></article>
+        <article class="service-card reveal"><div><div class="icon">🚐</div><span class="service-no">04</span><h3 data-i18n="svc.4">የጉዞ እገዛ</h3><p data-i18n="svc.4p">ስለ መጓጓዣ፣ መኖሪያ እና ሌሎች የጉዞ ዝርዝሮች የአሁኑን መረጃ ያግኙ።</p></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="packages">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" data-i18n="packages.eyebrow">UMRAH PACKAGES</span><h2 data-i18n="packages.title">የአሁኑን ጥቅል መረጃ ይጠይቁ</h2><p class="lead" data-i18n="packages.lead">በተያያዙ ቪዲዮዎች ውስጥ Normal, Standard እና VIP የሚሉ የጥቅል ምድቦች ታይተዋል። የተወሰነ ዋጋ፣ ቀን፣ ሆቴል ወይም የጥቅል ይዘት እዚህ እንደ ወቅታዊ መረጃ አልቀረበም፤ አሁኑን መረጃ በቀጥታ ይጠይቁ።</p></div>
+      <div class="rail-controls"><button class="rail-btn" data-target="packageRail" data-dir="-1">←</button><button class="rail-btn" data-target="packageRail" data-dir="1">→</button></div>
+    </div>
+    <div class="rail" id="packageRail">
+      <article class="package-card reveal"><div class="package-top"><span class="package-label">01 • Social-media material</span><h3>Normal</h3><p data-i18n="pkg.note">በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።</p></div><div class="package-bottom"><span class="tag">Current details by phone</span><a class="btn outline" href="tel:0942888886" style="margin-top:15px;width:100%" data-i18n="pkg.cta">የአሁኑን መረጃ ይጠይቁ</a></div></article>
+      <article class="package-card reveal"><div class="package-top"><span class="package-label">02 • Social-media material</span><h3>Standard</h3><p data-i18n="pkg.note2">በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።</p></div><div class="package-bottom"><span class="tag">No invented price</span><a class="btn outline" href="tel:0965888883" style="margin-top:15px;width:100%" data-i18n="pkg.cta">የአሁኑን መረጃ ይጠይቁ</a></div></article>
+      <article class="package-card reveal"><div class="package-top"><span class="package-label">03 • Social-media material</span><h3>VIP</h3><p data-i18n="pkg.note3">በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።</p></div><div class="package-bottom"><span class="tag">Availability may change</span><a class="btn outline" href="#contact" style="margin-top:15px;width:100%" data-i18n="pkg.cta">የአሁኑን መረጃ ይጠይቁ</a></div></article>
+      <article class="package-card reveal"><div class="package-top"><span class="package-label">04 • Current inquiry</span><h3 data-i18n="pkg.current">Current Packages</h3><p data-i18n="pkg.currentp">ዋጋ፣ ቀን፣ ሆቴል፣ በረራ እና የጥቅል ይዘት ሊቀየር ስለሚችል የአሁኑን መረጃ ከLINK TRAVEL AGENT ይጠይቁ።</p></div><div class="package-bottom"><a class="btn primary" href="#contact" style="width:100%" data-i18n="pkg.contact">ያግኙን</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="umrah">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" style="color:#ffc56b" data-i18n="dest.eyebrow">THE JOURNEY</span><h2 data-i18n="dest.title">መካ እና መዲና</h2><p class="lead" data-i18n="dest.lead">በተያያዙ የኤጀንሲው ቪዲዮዎች የሚታዩ የዑምራ ጉዞ ገጠመኞችን በምስል ይመልከቱ።</p></div>
+      <div class="rail-controls"><button class="rail-btn" data-target="destRail" data-dir="-1">←</button><button class="rail-btn" data-target="destRail" data-dir="1">→</button></div>
+    </div>
+    <div class="rail" id="destRail">
+      <article class="destination-card reveal"><img src="assets/gallery/kaaba-makkah.jpg" alt="Makkah Umrah scene" loading="lazy"><div class="destination-content"><h3 data-i18n="dest.makkah">መካ</h3><p data-i18n="dest.makkahp">የዑምራ ጉዞ ዋና መዳረሻ። የተያያዘው የኤጀንሲ ሚዲያ የሐራም አካባቢ እና የተጓዦችን ጉዞ ያሳያል።</p></div></article>
+      <article class="destination-card reveal"><img src="assets/gallery/umrah-dua-02.jpg" alt="Pilgrims during Umrah" loading="lazy"><div class="destination-content"><h3 data-i18n="dest.madinah">መዲና</h3><p data-i18n="dest.madinahp">የዑምራ ጉዞ ሚዲያ የሚያሳየውን መንፈሳዊ ገጠመኝ ይመልከቱ። የተለየ የሆቴል ወይም የዚያራ ዝርዝር እዚህ አልተፈጠረም።</p></div></article>
+      <article class="destination-card reveal"><img src="assets/gallery/pilgrims-haram.jpg" alt="Umrah pilgrims" loading="lazy"><div class="destination-content"><h3 data-i18n="dest.media">የተጓዦች ገጠመኝ</h3><p data-i18n="dest.mediap">ይህ ምስል ከተያያዘው የLink Travel Agent ቪዲዮ የተወሰደ የኩባንያ ሚዲያ ነው።</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" data-i18n="journey.eyebrow">UMRAH JOURNEY</span><h2 data-i18n="journey.title">ጉዞዎን ከጥያቄ ወደ መንገድ</h2></div>
+    </div>
+    <div class="journey">
+      <div class="step reveal"><div class="step-no">01</div><strong data-i18n="step.1">LINK ያግኙ</strong><span data-i18n="step.1s">Contact</span></div>
+      <div class="step reveal"><div class="step-no">02</div><strong data-i18n="step.2">የአሁኑን ጥቅል ይጠይቁ</strong><span data-i18n="step.2s">Current details</span></div>
+      <div class="step reveal"><div class="step-no">03</div><strong data-i18n="step.3">ምዝገባ ያረጋግጡ</strong><span data-i18n="step.3s">Registration</span></div>
+      <div class="step reveal"><div class="step-no">04</div><strong data-i18n="step.4">የጉዞ ዝግጅት</strong><span data-i18n="step.4s">Preparation</span></div>
+      <div class="step reveal"><div class="step-no">05</div><strong data-i18n="step.5">መካ</strong><span data-i18n="step.5s">Makkah</span></div>
+      <div class="step reveal"><div class="step-no">06</div><strong data-i18n="step.6">መዲና</strong><span data-i18n="step.6s">Madinah</span></div>
+      <div class="step reveal"><div class="step-no">07</div><strong data-i18n="step.7">መመለሻ</strong><span data-i18n="step.7s">Return journey</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" style="color:#ffc56b" data-i18n="gallery.eyebrow">AUTHENTIC MEDIA</span><h2 data-i18n="gallery.title">የዑምራ ጉዞ ምስሎች</h2><p class="lead" data-i18n="gallery.lead">ከተያያዙት የLINK TRAVEL AGENT ቪዲዮዎች የተወሰዱ እውነተኛ የጉዞ ፍሬሞች። የFacebook ምስሎች በቀጥታ ሊጫኑ ስላልተቻለ እዚህ ምንም የተፈጠረ የኩባንያ ፎቶ አልተጨመረም።</p></div>
+      <div class="rail-controls"><button class="rail-btn" data-target="photoRail" data-dir="-1">←</button><button class="rail-btn" data-target="photoRail" data-dir="1">→</button></div>
+    </div>
+    <div class="rail" id="photoRail">
+      <article class="media-card reveal"><img src="assets/gallery/makkah-group-night.jpg" alt="Link Travel Agent Umrah media frame" loading="lazy"><div class="caption"><strong>Makkah • Umrah media</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/kaaba-makkah.jpg" alt="Kaaba and pilgrims in Makkah" loading="lazy"><div class="caption"><strong>Kaaba • Makkah</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/pilgrims-haram.jpg" alt="Pilgrims at the Haram" loading="lazy"><div class="caption"><strong>Haram • Pilgrims</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/umrah-group.jpg" alt="Umrah group at night" loading="lazy"><div class="caption"><strong>Umrah group</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/umrah-dua-01.jpg" alt="Pilgrim in prayer" loading="lazy"><div class="caption"><strong>Prayer • Umrah</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/umrah-dua-02.jpg" alt="Pilgrim praying during Umrah" loading="lazy"><div class="caption"><strong>Spiritual moment</strong><small>Uploaded video frame</small></div></article>
+      <article class="media-card reveal"><img src="assets/gallery/umrah-dua-03.jpg" alt="Pilgrims praying" loading="lazy"><div class="caption"><strong>Pilgrims</strong><small>Uploaded video frame</small></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="videos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" data-i18n="videos.eyebrow">VIDEO JOURNEY</span><h2 data-i18n="videos.title">የጉዞ ቪዲዮዎች</h2><p class="lead" data-i18n="videos.lead">ሁለቱ በዚህ ግንኙነት የተሰጡ ቪዲዮዎች በቀጥታ ይጫወታሉ። ከኦፊሴላዊው TikTok ጋር ለመከታተል የታችኛውን አገናኝ ይጠቀሙ።</p></div>
+      <div class="rail-controls"><button class="rail-btn" data-target="videoRail" data-dir="-1">←</button><button class="rail-btn" data-target="videoRail" data-dir="1">→</button></div>
+    </div>
+    <div class="rail" id="videoRail">
+      <article class="video-card reveal"><video controls playsinline preload="metadata" poster="assets/gallery/makkah-group-night.jpg"><source src="assets/umrah-journey-01.mp4" type="video/mp4"></video><div class="video-info"><strong>Link Travel Agent • Umrah Journey</strong><span>Attached company video • Makkah / pilgrim journey footage</span></div></article>
+      <article class="video-card reveal"><video controls playsinline preload="metadata" poster="assets/gallery/umrah-dua-02.jpg"><source src="assets/umrah-journey-02.mp4" type="video/mp4"></video><div class="video-info"><strong>Link Travel Agent • Umrah Moments</strong><span>Attached company video • prayer and package announcement material</span></div></article>
+      <article class="video-card reveal"><div style="aspect-ratio:9/16;background:linear-gradient(160deg,#24103f,#111);display:grid;place-items:center;padding:24px;text-align:center;color:white"><div><div style="font-size:3rem;margin-bottom:12px">♪</div><strong style="font-size:1.15rem">Official TikTok</strong><p style="color:#c8bdcf;font-size:.8rem;line-height:1.6">Browse the latest videos from @linktravelagent. Individual TikTok post URLs were not exposed by the public page fetch, so no fake embeds are used.</p><a class="btn primary" target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A">Watch on TikTok</a></div></div><div class="video-info"><strong>@linktravelagent</strong><span>Official TikTok profile</span></div></article>
+      <article class="video-card reveal"><img src="assets/package-poster.jpg" alt="Package announcement shown in attached Link Travel Agent video" style="width:100%;aspect-ratio:9/16;object-fit:cover"><div class="video-info"><strong>Package announcement</strong><span>Poster frame from the second attached video. Details are presented as historical media, not current pricing.</span><div class="video-actions"><a class="mini-btn" target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A">TikTok profile ↗</a></div></div></article>
+    </div>
+    <div style="margin-top:25px;text-align:center" class="reveal">
+      <a class="btn outline" target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A" data-i18n="videos.more">View More Videos on TikTok ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="eyebrow" data-i18n="social.eyebrow">SOCIAL</span><h2 data-i18n="social.title">Link Travel Agentን ይከተሉ</h2><p class="lead" data-i18n="social.lead">የአሁኑን ማስታወቂያዎች፣ ጉዞዎች እና ቪዲዮዎች ከኦፊሴላዊ ገፆች ይከታተሉ።</p></div>
+    </div>
+    <div class="social-grid">
+      <a class="social-card reveal" target="_blank" rel="noopener" href="https://www.facebook.com/share/19JB1ArkNm/"><div class="social-left"><div class="social-icon fb">f</div><div><strong>Facebook</strong><span>Official Link Travel Agent page</span></div></div><span>↗</span></a>
+      <a class="social-card reveal" target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A"><div class="social-left"><div class="social-icon tk">♪</div><div><strong>TikTok</strong><span>@linktravelagent</span></div></div><span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal" style="justify-content:center;text-align:center">
+      <div><span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span><h2 data-i18n="faq.title">ብዙ ጊዜ የሚጠየቁ ጥያቄዎች</h2></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><button class="faq-q"><span data-i18n="faq.q1">የዑምራ ጉዞ መረጃ እንዴት አገኛለሁ?</span><span>+</span></button><div class="faq-a" data-i18n="faq.a1">በ0942888886 ወይም 0965888883 ይደውሉ፣ ወይም በግንኙነት ቅጹ የአሁኑን ጥቅል መረጃ ይጠይቁ።</div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span data-i18n="faq.q2">ቢሮው የት ነው?</span><span>+</span></button><div class="faq-a" data-i18n="faq.a2">Bole Tropical Mall, 4th Floor, Office Number 404, Addis Ababa, Ethiopia.</div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span data-i18n="faq.q3">የአሁኑ የዑምራ ጥቅል ዋጋ ስንት ነው?</span><span>+</span></button><div class="faq-a" data-i18n="faq.a3">የአሁኑ ዋጋ ከዚህ ድረ-ገጽ አልተፈጠረም። ዋጋ፣ ቀን፣ ሆቴል፣ በረራ እና የጥቅል ይዘት ሊለዋወጥ ስለሚችል በቀጥታ ከLink Travel Agent ያረጋግጡ።</div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span data-i18n="faq.q4">TikTok ላይ የት ልከታተላችሁ?</span><span>+</span></button><div class="faq-a" data-i18n="faq.a4">@linktravelagent የሚለውን ኦፊሴላዊ TikTok መለያ ይከተሉ።</div></div>
+      <div class="faq-item reveal"><button class="faq-q"><span data-i18n="faq.q5">በድረ-ገጹ ላይ ቦታ ማስያዝ ወይም ክፍያ አለ?</span><span>+</span></button><div class="faq-a" data-i18n="faq.a5">ይህ ድረ-ገጽ የመረጃ እና የጥያቄ መላኪያ መድረክ ነው፤ የኦንላይን ክፍያ ወይም የተረጋገጠ ቦታ ማስያዝ አያስመስልም።</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-panel reveal">
+        <span class="eyebrow" style="color:#ffc56b" data-i18n="contact.eyebrow">CONTACT</span>
+        <h3 data-i18n="contact.title">የአሁኑን የዑምራ መረጃ ከLINK ይጠይቁ</h3>
+        <p data-i18n="contact.text">የጉዞ ቀን፣ የተጓዦች ብዛት እና የሚፈልጉትን መረጃ ይላኩ። ቡድኑን በቀጥታ ለማግኘት የስልክ ቁጥሮቹን ይጠቀሙ።</p>
+        <div class="contact-lines">
+          <a class="contact-line" href="tel:0942888886"><div class="i">☎</div><div><strong>0942888886</strong><span data-i18n="contact.call">Call</span></div></a>
+          <a class="contact-line" href="tel:0965888883"><div class="i">☎</div><div><strong>0965888883</strong><span data-i18n="contact.call">Call</span></div></a>
+          <a class="contact-line" href="mailto:linktravelagentethiopia@gmail.com"><div class="i">✉</div><div><strong>linktravelagentethiopia@gmail.com</strong><span>Email</span></div></a>
+          <div class="contact-line"><div class="i">⌖</div><div><strong>Bole Tropical Mall</strong><span>4th Floor • Office 404 • Addis Ababa, Ethiopia</span></div></div>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="tel:0942888886" data-i18n="contact.callbtn">ይደውሉ</a>
+          <a class="btn ghost" target="_blank" rel="noopener" href="https://www.facebook.com/share/19JB1ArkNm/">Facebook ↗</a>
+          <a class="btn ghost" target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A">TikTok ↗</a>
+        </div>
+      </div>
+      <form class="form-card reveal" id="inquiryForm">
+        <span class="eyebrow" data-i18n="form.eyebrow">INQUIRY FORM</span>
+        <h3 style="margin:10px 0 22px" data-i18n="form.title">ጥያቄዎን ይላኩ</h3>
+        <div class="form-grid">
+          <div class="field"><label data-i18n="form.name">ሙሉ ስም</label><input name="name" required></div>
+          <div class="field"><label data-i18n="form.phone">ስልክ ቁጥር</label><input name="phone" type="tel" required></div>
+          <div class="field"><label data-i18n="form.email">ኢሜይል</label><input name="email" type="email"></div>
+          <div class="field"><label data-i18n="form.date">የጉዞ ቀን</label><input name="date" type="date"></div>
+          <div class="field"><label data-i18n="form.travelers">የተጓዦች ብዛት</label><input name="travelers" type="number" min="1"></div>
+          <div class="field"><label data-i18n="form.service">የሚፈልጉት አገልግሎት</label><select name="service"><option>Umrah</option><option>Package information</option><option>Travel inquiry</option><option>Other</option></select></div>
+          <div class="field full"><label data-i18n="form.message">መልዕክት</label><textarea name="message" placeholder="..."></textarea></div>
+        </div>
+        <button class="btn primary" type="submit" style="margin-top:16px;width:100%" data-i18n="form.send">ጥያቄ ላክ</button>
+        <div class="form-status" id="formStatus" data-i18n="form.status">የጥያቄዎ ዝርዝር ተዘጋጅቷል። ለመላክ የኢሜይል መተግበሪያዎ ይከፈታል።</div>
+        <p class="form-note" data-i18n="form.note">ማስታወሻ፦ ይህ ቅጽ የመረጃ ጥያቄ ለመላክ ነው፤ የኦንላይን ክፍያ ወይም ራስ-ሰር ቦታ ማስያዝ አይፈጽምም።</p>
+      </form>
+    </div>
+    <div class="map-card reveal">
+      <strong data-i18n="map.title">ቢሮ አድራሻ</strong>
+      <div style="margin:7px 0 12px;color:var(--muted);font-size:.86rem">Bole Tropical Mall • 4th Floor • Office 404 • Addis Ababa, Ethiopia</div>
+      <a class="btn outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bole%20Tropical%20Mall%20Addis%20Ababa" data-i18n="map.btn">Find Us on Map ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#home"><img src="assets/link-travel-agent-logo.png" alt="Link Travel Agent official logo"><strong>LINK TRAVEL AGENT</strong></a>
+        <p class="footer-desc" data-i18n="footer.desc">የዑምራ ጉዞ መረጃና ግንኙነት በአዲስ አበባ። የአሁኑን ጥቅል እና የጉዞ ዝርዝር በቀጥታ ይጠይቁ።</p>
+        <div class="social-row"><a target="_blank" rel="noopener" href="https://www.facebook.com/share/19JB1ArkNm/" aria-label="Facebook">f</a><a target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A" aria-label="TikTok">♪</a><a href="mailto:linktravelagentethiopia@gmail.com" aria-label="Email">✉</a></div>
+      </div>
+      <div><h4 data-i18n="footer.nav">Navigation</h4><ul><li><a href="#about" data-i18n="nav.about">ስለ እኛ</a></li><li><a href="#services" data-i18n="nav.services">አገልግሎቶች</a></li><li><a href="#packages" data-i18n="nav.packages">ጥቅሎች</a></li><li><a href="#gallery" data-i18n="nav.gallery">ማህደረ ምስል</a></li><li><a href="#contact" data-i18n="nav.contact">ያግኙን</a></li></ul></div>
+      <div><h4 data-i18n="footer.contact">Contact</h4><ul><li><a href="tel:0942888886">0942888886</a></li><li><a href="tel:0965888883">0965888883</a></li><li><a href="mailto:linktravelagentethiopia@gmail.com">Email</a></li><li>Bole Tropical Mall</li><li>4F • Office 404</li></ul></div>
+      <div><h4 data-i18n="footer.social">Social</h4><ul><li><a target="_blank" rel="noopener" href="https://www.facebook.com/share/19JB1ArkNm/">Facebook ↗</a></li><li><a target="_blank" rel="noopener" href="https://www.tiktok.com/@linktravelagent?_r=1&_t=ZS-99v3y1rXB5A">TikTok ↗</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> LINK TRAVEL AGENT. <span data-i18n="footer.rights">All rights reserved.</span></span><span data-i18n="footer.note">Information is subject to current confirmation from the agency.</span></div>
+  </div>
+</footer>
+
+<div class="floating">
+  <a class="float-btn float-call" href="tel:0942888886" aria-label="Call Link Travel Agent">☎</a>
+  <a class="float-btn float-mail" href="mailto:linktravelagentethiopia@gmail.com" aria-label="Email Link Travel Agent">✉</a>
+</div>
+
+<script>
+const T={
+am:{
+"nav.home":"መነሻ","nav.about":"ስለ እኛ","nav.umrah":"ዑምራ","nav.services":"አገልግሎቶች","nav.packages":"ጥቅሎች","nav.gallery":"ማህደረ ምስል","nav.videos":"ቪዲዮዎች","nav.faq":"ጥያቄዎች","nav.contact":"ያግኙን",
+"hero.eyebrow":"UMRAH TRAVEL • ETHIOPIA","hero.title":"የዑምራ ጉዞዎን በመተማመን ይጀምሩ","hero.text":"ለዑምራ ጉዞዎ መረጃና የጉዞ እገዛ ከLINK TRAVEL AGENT ጋር። የአሁኑን የጉዞ እና የጥቅል መረጃ በቀጥታ ያግኙ።","hero.cta1":"ያግኙን","hero.cta2":"የዑምራ መረጃ ይጠይቁ","hero.location":"Bole Tropical Mall • 4F • Office 404","hero.scroll":"ይመልከቱ",
+"trust.1":"የዑምራ ጉዞ","trust.1s":"Umrah travel information","trust.2":"ቀጥታ ግንኙነት","trust.2s":"Call the office directly","trust.3":"Addis Ababa","trust.3s":"Bole Tropical Mall, 4th Floor",
+"about.eyebrow":"ABOUT LINK","about.title":"ለመንፈሳዊ ጉዞዎ የተዘጋጀ የጉዞ አጋር","about.text":"LINK TRAVEL AGENT በአዲስ አበባ የሚገኝ እና ለዑምራ ጉዞ መረጃና ግንኙነት የሚያቀርብ የጉዞ ኤጀንሲ ነው። ስለ ዑምራ ጉዞዎች፣ ጥቅሎች እና የመጓጓዣ ዝርዝሮች የአሁኑን መረጃ ለማግኘት በስልክ ወይም በቢሮው ያግኙን።","about.badge":"ለዑምራ ጉዞ መረጃና ግንኙነት በቀጥታ ከኤጀንሲው ያግኙ።","about.call":"0942888886 ይደውሉ","about.inquiry":"ጥያቄ ይላኩ",
+"services.eyebrow":"SERVICES","services.title":"የዑምራ ጉዞዎን በቀላሉ ለማቀናጀት",
+"svc.1":"የዑምራ ጉዞ","svc.1p":"ስለ ዑምራ ጉዞ እና የጉዞ አማራጮች መረጃ ያግኙ።","svc.2":"ጥቅል መረጃ","svc.2p":"የአሁኑን የዑምራ ጥቅል ዝርዝሮች በቀጥታ ከኤጀንሲው ይጠይቁ።","svc.3":"የምዝገባ ጥያቄ","svc.3p":"የምዝገባ ሂደትን እና የሚያስፈልጉ ወቅታዊ መረጃዎችን ይጠይቁ።","svc.4":"የጉዞ እገዛ","svc.4p":"ስለ መጓጓዣ፣ መኖሪያ እና ሌሎች የጉዞ ዝርዝሮች የአሁኑን መረጃ ያግኙ።",
+"packages.eyebrow":"UMRAH PACKAGES","packages.title":"የአሁኑን ጥቅል መረጃ ይጠይቁ","packages.lead":"በተያያዙ ቪዲዮዎች ውስጥ Normal, Standard እና VIP የሚሉ የጥቅል ምድቦች ታይተዋል። የተወሰነ ዋጋ፣ ቀን፣ ሆቴል ወይም የጥቅል ይዘት እዚህ እንደ ወቅታዊ መረጃ አልቀረበም፤ አሁኑን መረጃ በቀጥታ ይጠይቁ።","pkg.note":"በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።","pkg.note2":"በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።","pkg.note3":"በተያያዘው የኤጀንሲው ቪዲዮ ላይ የታየ የጥቅል ምድብ። የአሁኑን ዝርዝር ያረጋግጡ።","pkg.cta":"የአሁኑን መረጃ ይጠይቁ","pkg.current":"የአሁኑ ጥቅሎች","pkg.currentp":"ዋጋ፣ ቀን፣ ሆቴል፣ በረራ እና የጥቅል ይዘት ሊቀየር ስለሚችል የአሁኑን መረጃ ከLINK TRAVEL AGENT ይጠይቁ።","pkg.contact":"ያግኙን",
+"dest.eyebrow":"THE JOURNEY","dest.title":"መካ እና መዲና","dest.lead":"በተያያዙ የኤጀንሲው ቪዲዮዎች የሚታዩ የዑምራ ጉዞ ገጠመኞችን በምስል ይመልከቱ።","dest.makkah":"መካ","dest.makkahp":"የዑምራ ጉዞ ዋና መዳረሻ። የተያያዘው የኤጀንሲ ሚዲያ የሐራም አካባቢ እና የተጓዦችን ጉዞ ያሳያል።","dest.madinah":"መዲና","dest.madinahp":"የዑምራ ጉዞ ሚዲያ የሚያሳየውን መንፈሳዊ ገጠመኝ ይመልከቱ። የተለየ የሆቴል ወይም የዚያራ ዝርዝር እዚህ አልተፈጠረም።","dest.media":"የተጓዦች ገጠመኝ","dest.mediap":"ይህ ምስል ከተያያዘው የLink Travel Agent ቪዲዮ የተወሰደ የኩባንያ ሚዲያ ነው።",
+"journey.eyebrow":"UMRAH JOURNEY","journey.title":"ጉዞዎን ከጥያቄ ወደ መንገድ","step.1":"LINK ያግኙ","step.1s":"Contact","step.2":"የአሁኑን ጥቅል ይጠይቁ","step.2s":"Current details","step.3":"ምዝገባ ያረጋግጡ","step.3s":"Registration","step.4":"የጉዞ ዝግጅት","step.4s":"Preparation","step.5":"መካ","step.5s":"Makkah","step.6":"መዲና","step.6s":"Madinah","step.7":"መመለሻ","step.7s":"Return journey",
+"gallery.eyebrow":"AUTHENTIC MEDIA","gallery.title":"የዑምራ ጉዞ ምስሎች","gallery.lead":"ከተያያዙት የLINK TRAVEL AGENT ቪዲዮዎች የተወሰዱ እውነተኛ የጉዞ ፍሬሞች። የFacebook ምስሎች በቀጥታ ሊጫኑ ስላልተቻለ እዚህ ምንም የተፈጠረ የኩባንያ ፎቶ አልተጨመረም።",
+"videos.eyebrow":"VIDEO JOURNEY","videos.title":"የጉዞ ቪዲዮዎች","videos.lead":"ሁለቱ በዚህ ግንኙነት የተሰጡ ቪዲዮዎች በቀጥታ ይጫወታሉ። ከኦፊሴላዊው TikTok ጋር ለመከታተል የታችኛውን አገናኝ ይጠቀሙ።","videos.more":"በTikTok ላይ ተጨማሪ ቪዲዮዎችን ይመልከቱ ↗",
+"social.eyebrow":"SOCIAL","social.title":"Link Travel Agentን ይከተሉ","social.lead":"የአሁኑን ማስታወቂያዎች፣ ጉዞዎች እና ቪዲዮዎች ከኦፊሴላዊ ገፆች ይከታተሉ።",
+"faq.eyebrow":"FAQ","faq.title":"ብዙ ጊዜ የሚጠየቁ ጥያቄዎች","faq.q1":"የዑምራ ጉዞ መረጃ እንዴት አገኛለሁ?","faq.a1":"በ0942888886 ወይም 0965888883 ይደውሉ፣ ወይም በግንኙነት ቅጹ የአሁኑን ጥቅል መረጃ ይጠይቁ።","faq.q2":"ቢሮው የት ነው?","faq.a2":"Bole Tropical Mall, 4th Floor, Office Number 404, Addis Ababa, Ethiopia.","faq.q3":"የአሁኑ የዑምራ ጥቅል ዋጋ ስንት ነው?","faq.a3":"የአሁኑ ዋጋ ከዚህ ድረ-ገጽ አልተፈጠረም። ዋጋ፣ ቀን፣ ሆቴል፣ በረራ እና የጥቅል ይዘት ሊለዋወጥ ስለሚችል በቀጥታ ከLink Travel Agent ያረጋግጡ።","faq.q4":"TikTok ላይ የት ልከታተላችሁ?","faq.a4":"@linktravelagent የሚለውን ኦፊሴላዊ TikTok መለያ ይከተሉ።","faq.q5":"በድረ-ገጹ ላይ ቦታ ማስያዝ ወይም ክፍያ አለ?","faq.a5":"ይህ ድረ-ገጽ የመረጃ እና የጥያቄ መላኪያ መድረክ ነው፤ የኦንላይን ክፍያ ወይም የተረጋገጠ ቦታ ማስያዝ አያስመስልም።",
+"contact.eyebrow":"CONTACT","contact.title":"የአሁኑን የዑምራ መረጃ ከLINK ይጠይቁ","contact.text":"የጉዞ ቀን፣ የተጓዦች ብዛት እና የሚፈልጉትን መረጃ ይላኩ። ቡድኑን በቀጥታ ለማግኘት የስልክ ቁጥሮቹን ይጠቀሙ።","contact.call":"Call","contact.callbtn":"ይደውሉ",
+"form.eyebrow":"INQUIRY FORM","form.title":"ጥያቄዎን ይላኩ","form.name":"ሙሉ ስም","form.phone":"ስልክ ቁጥር","form.email":"ኢሜይል","form.date":"የጉዞ ቀን","form.travelers":"የተጓዦች ብዛት","form.service":"የሚፈልጉት አገልግሎት","form.message":"መልዕክት","form.send":"ጥያቄ ላክ","form.status":"የጥያቄዎ ዝርዝር ተዘጋጅቷል። ለመላክ የኢሜይል መተግበሪያዎ ይከፈታል።","form.note":"ማስታወሻ፦ ይህ ቅጽ የመረጃ ጥያቄ ለመላክ ነው፤ የኦንላይን ክፍያ ወይም ራስ-ሰር ቦታ ማስያዝ አይፈጽምም።","map.title":"ቢሮ አድራሻ","map.btn":"Find Us on Map ↗",
+"footer.desc":"የዑምራ ጉዞ መረጃና ግንኙነት በአዲስ አበባ። የአሁኑን ጥቅል እና የጉዞ ዝርዝር በቀጥታ ይጠይቁ።","footer.nav":"Navigation","footer.contact":"Contact","footer.social":"Social","footer.rights":"All rights reserved.","footer.note":"Information is subject to current confirmation from the agency."
+},
+en:{
+"nav.home":"Home","nav.about":"About","nav.umrah":"Umrah","nav.services":"Services","nav.packages":"Packages","nav.gallery":"Gallery","nav.videos":"Videos","nav.faq":"FAQ","nav.contact":"Contact",
+"hero.eyebrow":"UMRAH TRAVEL • ETHIOPIA","hero.title":"Begin Your Umrah Journey With Confidence","hero.text":"Umrah travel information and journey assistance from LINK TRAVEL AGENT. Contact the agency directly for current package and travel details.","hero.cta1":"Contact Us","hero.cta2":"Request Umrah Information","hero.location":"Bole Tropical Mall • 4F • Office 404","hero.scroll":"Explore",
+"trust.1":"Umrah Travel","trust.1s":"Umrah travel information","trust.2":"Direct Contact","trust.2s":"Call the office directly","trust.3":"Addis Ababa","trust.3s":"Bole Tropical Mall, 4th Floor",
+"about.eyebrow":"ABOUT LINK","about.title":"A travel partner for your spiritual journey","about.text":"LINK TRAVEL AGENT is a travel agency in Addis Ababa providing Umrah travel information and direct contact support. For current Umrah journeys, packages and travel details, contact the agency by phone or at its office.","about.badge":"Get Umrah travel information and direct assistance from the agency.","about.call":"Call 0942888886","about.inquiry":"Send an Inquiry",
+"services.eyebrow":"SERVICES","services.title":"Support for planning your Umrah journey","svc.1":"Umrah Travel","svc.1p":"Get information about Umrah journeys and available travel options.","svc.2":"Package Information","svc.2p":"Ask the agency directly for current Umrah package details.","svc.3":"Registration Inquiry","svc.3p":"Ask about the current registration process and required information.","svc.4":"Travel Support","svc.4p":"Ask for current information about transportation, accommodation and other journey details.",
+"packages.eyebrow":"UMRAH PACKAGES","packages.title":"Ask for current package information","packages.lead":"The attached videos visibly show package categories labeled Normal, Standard and VIP. No price, date, hotel or inclusion is presented here as current; contact the agency for the latest details.","pkg.note":"A package category visibly shown in an attached agency video. Confirm current details directly.","pkg.note2":"A package category visibly shown in an attached agency video. Confirm current details directly.","pkg.note3":"A package category visibly shown in an attached agency video. Confirm current details directly.","pkg.cta":"Request Current Details","pkg.current":"Current Packages","pkg.currentp":"Prices, dates, hotels, flights and inclusions can change. Contact LINK TRAVEL AGENT for current information.","pkg.contact":"Contact Us",
+"dest.eyebrow":"THE JOURNEY","dest.title":"Makkah & Madinah","dest.lead":"Explore visual moments from the Umrah journey shown in the attached agency videos.","dest.makkah":"Makkah","dest.makkahp":"A central destination of the Umrah journey. The attached agency media shows the Haram area and pilgrim journey.","dest.madinah":"Madinah","dest.madinahp":"Explore the spiritual journey shown in the supplied Umrah media. No specific hotel or Ziyarah details are invented here.","dest.media":"Pilgrim Journey","dest.mediap":"This image is a company media frame extracted from an attached Link Travel Agent video.",
+"journey.eyebrow":"UMRAH JOURNEY","journey.title":"From inquiry to journey","step.1":"Contact LINK","step.1s":"Contact","step.2":"Ask for current package","step.2s":"Current details","step.3":"Confirm registration","step.3s":"Registration","step.4":"Prepare for travel","step.4s":"Preparation","step.5":"Makkah","step.5s":"Makkah","step.6":"Madinah","step.6s":"Madinah","step.7":"Return journey","step.7s":"Return journey",
+"gallery.eyebrow":"AUTHENTIC MEDIA","gallery.title":"Umrah Journey Photos","gallery.lead":"Authentic travel frames extracted from the supplied LINK TRAVEL AGENT videos. Facebook photos were not directly fetchable, so no unverified company photos are presented as Facebook media here.",
+"videos.eyebrow":"VIDEO JOURNEY","videos.title":"Travel Videos","videos.lead":"Both videos supplied in this conversation are playable directly. Use the link below to follow the official TikTok profile for the latest posts.","videos.more":"View More Videos on TikTok ↗",
+"social.eyebrow":"SOCIAL","social.title":"Follow Link Travel Agent","social.lead":"Follow the official pages for current announcements, journeys and videos.",
+"faq.eyebrow":"FAQ","faq.title":"Frequently Asked Questions","faq.q1":"How can I get Umrah journey information?","faq.a1":"Call 0942888886 or 0965888883, or use the inquiry form to request current package information.","faq.q2":"Where is the office?","faq.a2":"Bole Tropical Mall, 4th Floor, Office Number 404, Addis Ababa, Ethiopia.","faq.q3":"What is the current Umrah package price?","faq.a3":"No current price is invented on this website. Prices, dates, hotels, flights and inclusions may change, so confirm directly with Link Travel Agent.","faq.q4":"Where can I follow you on TikTok?","faq.a4":"Follow the official TikTok account @linktravelagent.","faq.q5":"Can I make a booking or payment on the website?","faq.a5":"This website is an information and inquiry platform; it does not claim to process online payments or confirmed bookings.",
+"contact.eyebrow":"CONTACT","contact.title":"Request current Umrah information","contact.text":"Send your travel date, number of travelers and the information you need. Use the listed phone numbers for direct contact with the agency.","contact.call":"Call","contact.callbtn":"Call Now",
+"form.eyebrow":"INQUIRY FORM","form.title":"Send Your Inquiry","form.name":"Full Name","form.phone":"Phone Number","form.email":"Email","form.date":"Preferred Travel Date","form.travelers":"Number of Travelers","form.service":"Interested Service","form.message":"Message","form.send":"Send Inquiry","form.status":"Your inquiry details are ready. Your email application will open to send them.","form.note":"Note: this form is for an information inquiry; it does not process online payment or automatic booking.","map.title":"Office Address","map.btn":"Find Us on Map ↗",
+"footer.desc":"Umrah travel information and direct contact in Addis Ababa. Ask the agency for current package and journey details.","footer.nav":"Navigation","footer.contact":"Contact","footer.social":"Social","footer.rights":"All rights reserved.","footer.note":"Information is subject to current confirmation from the agency."
+}};
+
+function setLang(lang){
+  const dict=T[lang];
+  document.documentElement.lang=lang==="am"?"am":"en";
+  document.body.classList.toggle("amharic",lang==="am");
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const k=el.getAttribute("data-i18n");
+    if(dict[k]) el.textContent=dict[k];
+  });
+  document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));
+  localStorage.setItem("linkLang",lang);
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+setLang(localStorage.getItem("linkLang")||"am");
+
+const topbar=document.getElementById("topbar");
+window.addEventListener("scroll",()=>topbar.classList.toggle("scrolled",scrollY>20),{passive:true});
+
+const menuBtn=document.getElementById("menuBtn"), panel=document.getElementById("mobilePanel");
+menuBtn.addEventListener("click",()=>panel.classList.toggle("open"));
+panel.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>panel.classList.remove("open")));
+
+document.querySelectorAll(".rail-btn").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const rail=document.getElementById(btn.dataset.target);
+    const dir=Number(btn.dataset.dir);
+    rail.scrollBy({left:dir*Math.min(500,rail.clientWidth*.8),behavior:"smooth"});
+  });
+});
+
+document.querySelectorAll(".faq-q").forEach(q=>{
+  q.addEventListener("click",()=>{
+    const item=q.parentElement;
+    document.querySelectorAll(".faq-item").forEach(i=>{if(i!==item)i.classList.remove("open")});
+    item.classList.toggle("open");
+    q.querySelector("span:last-child").textContent=item.classList.contains("open")?"−":"+";
+  });
+});
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")});
+},{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+document.getElementById("inquiryForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f=new FormData(e.currentTarget);
+  const name=f.get("name")||"";
+  const phone=f.get("phone")||"";
+  const email=f.get("email")||"";
+  const date=f.get("date")||"";
+  const travelers=f.get("travelers")||"";
+  const service=f.get("service")||"";
+  const message=f.get("message")||"";
+  const subject=encodeURIComponent("Link Travel Agent inquiry — "+name);
+  const body=encodeURIComponent(
+`Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Preferred travel date: ${date}
+Travelers: ${travelers}
+Interested service: ${service}
+
+Message:
+${message}`
+  );
+  document.getElementById("formStatus").style.display="block";
+  window.location.href=`mailto:linktravelagentethiopia@gmail.com?subject=${subject}&body=${body}`;
+});
+</script>
+</body>
+</html>
